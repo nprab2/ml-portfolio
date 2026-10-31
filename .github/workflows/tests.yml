@@ -1,0 +1,31 @@
+name: tests
+
+on: [push, pull_request]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        project:
+          - 01-customer-churn-prediction
+          - 02-credit-card-fraud-detection
+          - 03-retail-demand-forecasting
+          - 04-customer-segmentation
+          - 05-movie-recommender-system
+          - 06-nlp-review-sentiment
+          - 07-house-price-prediction
+          - 08-ab-testing-framework
+          - 09-predictive-maintenance-rul
+          - 10-neural-network-from-scratch
+    defaults:
+      run:
+        working-directory: ${{ matrix.project }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install -r requirements.txt
+      - run: python -m pytest -q

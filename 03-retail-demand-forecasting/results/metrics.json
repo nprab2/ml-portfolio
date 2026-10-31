@@ -1,0 +1,37 @@
+{
+  "folds": [
+    {
+      "origin": "2024-10-08",
+      "wape_gbm": 0.39371619743961367,
+      "wape_seasonal_naive": 0.5694418690895605,
+      "wape_moving_avg": 0.4460639747585789,
+      "bias_gbm": -0.05124209416208831,
+      "p10_p90_coverage": 0.7792857142857142
+    },
+    {
+      "origin": "2024-11-05",
+      "wape_gbm": 0.4009307235386498,
+      "wape_seasonal_naive": 0.5920926750135186,
+      "wape_moving_avg": 0.46228070696686807,
+      "bias_gbm": -0.02479780405096471,
+      "p10_p90_coverage": 0.7825
+    },
+    {
+      "origin": "2024-12-03",
+      "wape_gbm": 0.3953517265880223,
+      "wape_seasonal_naive": 0.6049735678066673,
+      "wape_moving_avg": 0.46210269831851186,
+      "bias_gbm": -0.03839616570552044,
+      "p10_p90_coverage": 0.7844642857142857
+    }
+  ],
+  "mean": {
+    "wape_gbm": 0.39666621585542855,
+    "wape_seasonal_naive": 0.5888360373032487,
+    "wape_moving_avg": 0.45681579334798633,
+    "bias_gbm": -0.03814535463952448,
+    "p10_p90_coverage": 0.7820833333333334
+  },
+  "improvement_vs_seasonal_naive": 0.3263554016291522,
+  "n_series": 200
+}

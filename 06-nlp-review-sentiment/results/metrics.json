@@ -1,0 +1,146 @@
+{
+  "n_reviews": 20000,
+  "examples": [
+    {
+      "text": "The customer serivce is pretty decent, but the setup process is pretty terrible. the app is incredibly disappointing.",
+      "label": 0,
+      "clean_label": 0
+    },
+    {
+      "text": "Honestly, the sound quality is very broken, but the packagnig is incredibly outstanding. the camera is relaible. Highly recommend.",
+      "label": 1,
+      "clean_label": 1
+    },
+    {
+      "text": "Update: the shippin gis super poor. the keyboard is not at all fantastic. the setup process is not at all uotstanding.",
+      "label": 0,
+      "clean_label": 0
+    },
+    {
+      "text": "Overall, the battery life is raelly broken.",
+      "label": 0,
+      "clean_label": 0
+    },
+    {
+      "text": "Overall, the customer service is awful, but the build quality is not at all awful.",
+      "label": 1,
+      "clean_label": 1
+    }
+  ],
+  "label_noise_ceiling_accuracy": 0.973,
+  "test": {
+    "lexicon_baseline": {
+      "accuracy": 0.68675,
+      "f1": 0.716323296354992,
+      "roc_auc": 0.7462408157999741
+    },
+    "tfidf_unigram_lr": {
+      "accuracy": 0.7935,
+      "f1": 0.7898218829516539,
+      "roc_auc": 0.8895245867047485
+    },
+    "tfidf_word1-3_char2-5_lr": {
+      "accuracy": 0.963,
+      "f1": 0.96272040302267,
+      "roc_auc": 0.9726949120506905
+    },
+    "scope_marking + word/char_lr": {
+      "accuracy": 0.96775,
+      "f1": 0.9674653215636823,
+      "roc_auc": 0.9724076479747509
+    }
+  },
+  "test_accuracy_vs_clean_labels": {
+    "lexicon_baseline": 0.70575,
+    "tfidf_unigram_lr": 0.8085,
+    "tfidf_word1-3_char2-5_lr": 0.9895,
+    "scope_marking + word/char_lr": 0.99475
+  },
+  "challenge_accuracy": {
+    "lexicon_baseline": {
+      "negation": 0.0,
+      "contrast_but": 0.488,
+      "heavy_typos": 0.614
+    },
+    "tfidf_unigram_lr": {
+      "negation": 0.0,
+      "contrast_but": 0.49,
+      "heavy_typos": 0.782
+    },
+    "tfidf_word1-3_char2-5_lr": {
+      "negation": 0.992,
+      "contrast_but": 1.0,
+      "heavy_typos": 0.906
+    },
+    "scope_marking + word/char_lr": {
+      "negation": 1.0,
+      "contrast_but": 1.0,
+      "heavy_typos": 0.916
+    }
+  },
+  "top_features": {
+    "positive": [
+      "solid",
+      "decent",
+      "amazing",
+      "reliable",
+      "smooth",
+      "perfect",
+      "fast",
+      "impressive",
+      "NOT_awful",
+      "sturdy",
+      "NOT_poor",
+      "good"
+    ],
+    "negative": [
+      "broken",
+      "bad",
+      "awful",
+      "slow",
+      "poor",
+      "flimsy",
+      "cheap",
+      "disappointing",
+      "terrible",
+      "mediocre",
+      "laggy",
+      "frustrating"
+    ]
+  },
+  "errors_explained_by_label_noise": 0.8372093023255814,
+  "genuine_error_examples": [
+    {
+      "text": "For the money, the keyboard i shardly cheap.",
+      "label": 1
+    },
+    {
+      "text": "Overall, the camera is nto smooth.",
+      "label": 0
+    },
+    {
+      "text": "For the money, the app is hardl yawful.",
+      "label": 1
+    },
+    {
+      "text": "Honestly, the setup process is extremely useless.",
+      "label": 0
+    },
+    {
+      "text": "After two weeks, the customer service i snever disappointing.",
+      "label": 1
+    },
+    {
+      "text": "For the money, the screen is ont at all great.",
+      "label": 0
+    },
+    {
+      "text": "Update: the setup process is ont at al lpoor.",
+      "label": 1
+    },
+    {
+      "text": "For the money, the build quality is nevre perfect.",
+      "label": 0
+    }
+  ]
+}

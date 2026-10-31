@@ -1,0 +1,54 @@
+{
+  "train_engines": 200,
+  "test_engines": 100,
+  "train_rows": 47920,
+  "selected_sensors": [
+    "s4",
+    "s12",
+    "s8",
+    "s11",
+    "s10",
+    "s6",
+    "s5"
+  ],
+  "prognostic_score_raw_top": {
+    "s12": 0.35,
+    "s8": 0.266,
+    "s4": 0.265,
+    "s11": 0.255,
+    "s10": 0.189,
+    "s6": 0.171
+  },
+  "prognostic_score_normalised_top": {
+    "s4": 0.733,
+    "s12": 0.732,
+    "s8": 0.698,
+    "s11": 0.69,
+    "s10": 0.563,
+    "s6": 0.493
+  },
+  "models": {
+    "mean_baseline": {
+      "rmse": 40.22142576675334,
+      "nasa_score": 28247.76813102825
+    },
+    "ridge_raw_last_cycle": {
+      "rmse": 24.523884511751493,
+      "nasa_score": 2004.5016213058723
+    },
+    "ridge_regime_normalised_windows": {
+      "rmse": 22.85436032392141,
+      "nasa_score": 1650.5289789478093
+    },
+    "gradient_boosting_windows": {
+      "rmse": 18.83630002887483,
+      "nasa_score": 965.7888223041406
+    }
+  },
+  "gbm_group_cv_rmse_all_cycles": 17.21136644497589,
+  "maintenance_alert": {
+    "engines_truly_within_20_cycles": 7,
+    "recall": 1.0,
+    "precision": 0.6363636363636364
+  }
+}

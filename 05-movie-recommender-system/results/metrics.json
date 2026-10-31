@@ -1,0 +1,164 @@
+{
+  "n_users": 3000,
+  "n_items": 1500,
+  "n_ratings": 149857,
+  "density": 0.033301555555555556,
+  "als_grid": [
+    {
+      "n_factors": 16,
+      "factor_reg": 0.05,
+      "valid_rmse": 0.8336346511583459
+    },
+    {
+      "n_factors": 16,
+      "factor_reg": 0.1,
+      "valid_rmse": 0.7860072044687759
+    },
+    {
+      "n_factors": 16,
+      "factor_reg": 0.2,
+      "valid_rmse": 0.8081006824605601
+    },
+    {
+      "n_factors": 32,
+      "factor_reg": 0.05,
+      "valid_rmse": 0.8279483927176327
+    },
+    {
+      "n_factors": 32,
+      "factor_reg": 0.1,
+      "valid_rmse": 0.7877616468101557
+    },
+    {
+      "n_factors": 32,
+      "factor_reg": 0.2,
+      "valid_rmse": 0.807829384291448
+    },
+    {
+      "n_factors": 64,
+      "factor_reg": 0.05,
+      "valid_rmse": 0.8024319435353091
+    },
+    {
+      "n_factors": 64,
+      "factor_reg": 0.1,
+      "valid_rmse": 0.786822280271612
+    },
+    {
+      "n_factors": 64,
+      "factor_reg": 0.2,
+      "valid_rmse": 0.8076535979327837
+    }
+  ],
+  "als_best": {
+    "n_factors": 16,
+    "factor_reg": 0.1,
+    "valid_rmse": 0.7860072044687759
+  },
+  "implicit_grid": [
+    {
+      "n_factors": 16,
+      "reg": 30.0,
+      "alpha": 10.0,
+      "valid_ndcg@10": 0.22544443959767335
+    },
+    {
+      "n_factors": 16,
+      "reg": 100.0,
+      "alpha": 10.0,
+      "valid_ndcg@10": 0.2514021899392664
+    },
+    {
+      "n_factors": 16,
+      "reg": 100.0,
+      "alpha": 20.0,
+      "valid_ndcg@10": 0.24908131657526578
+    },
+    {
+      "n_factors": 16,
+      "reg": 300.0,
+      "alpha": 20.0,
+      "valid_ndcg@10": 0.19067938448738614
+    },
+    {
+      "n_factors": 32,
+      "reg": 30.0,
+      "alpha": 10.0,
+      "valid_ndcg@10": 0.20231772169094808
+    },
+    {
+      "n_factors": 32,
+      "reg": 100.0,
+      "alpha": 10.0,
+      "valid_ndcg@10": 0.25366136990510385
+    },
+    {
+      "n_factors": 32,
+      "reg": 100.0,
+      "alpha": 20.0,
+      "valid_ndcg@10": 0.2487124890233632
+    },
+    {
+      "n_factors": 32,
+      "reg": 300.0,
+      "alpha": 20.0,
+      "valid_ndcg@10": 0.19067938448738614
+    }
+  ],
+  "implicit_best": {
+    "n_factors": 32,
+    "reg": 100.0,
+    "alpha": 10.0,
+    "valid_ndcg@10": 0.25366136990510385
+  },
+  "rmse": {
+    "global_mean": 1.0338737942260232,
+    "bias_baseline": 0.8561992422658132,
+    "biased_als": 0.7692545002784823
+  },
+  "ranking": {
+    "popularity": {
+      "precision@10": 0.14742857142857144,
+      "recall@10": 0.25175842364917994,
+      "ndcg@10": 0.2002007664531867,
+      "map@10": 0.09548864328800304,
+      "catalog_coverage": 0.024666666666666667
+    },
+    "item_knn": {
+      "precision@10": 0.150890756302521,
+      "recall@10": 0.27034534559744644,
+      "ndcg@10": 0.26726431844306325,
+      "map@10": 0.15303843749139867,
+      "catalog_coverage": 0.106
+    },
+    "biased_als (rating-optimised)": {
+      "precision@10": 0.016571428571428574,
+      "recall@10": 0.030782902438364623,
+      "ndcg@10": 0.02260578486224427,
+      "map@10": 0.008396882139099027,
+      "catalog_coverage": 0.36933333333333335
+    },
+    "implicit_als (ranking-optimised)": {
+      "precision@10": 0.19677310924369748,
+      "recall@10": 0.3426741307245509,
+      "ndcg@10": 0.3286109298811158,
+      "map@10": 0.19640497145948324,
+      "catalog_coverage": 0.03666666666666667
+    }
+  },
+  "example_user": {
+    "user_id": 7,
+    "liked_genres_in_history": {
+      "documentary": 9,
+      "animation": 6,
+      "drama": 4
+    },
+    "top10_genres": {
+      "documentary": 4,
+      "animation": 2,
+      "action": 2,
+      "comedy": 1,
+      "sci-fi": 1
+    }
+  }
+}

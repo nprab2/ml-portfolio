@@ -1,0 +1,163 @@
+{
+  "n_train": 1077,
+  "n_val": 360,
+  "n_test": 360,
+  "models": {
+    "sklearn_logistic_regression": {
+      "test_accuracy_mean": 0.9638888888888889,
+      "test_accuracy_std": 0.0,
+      "train_seconds_per_run": 0.0,
+      "parameters": 650
+    },
+    "sklearn_mlp (reference)": {
+      "test_accuracy_mean": 0.9622222222222222,
+      "test_accuracy_std": 0.009060836905722285,
+      "train_seconds_per_run": 0.5,
+      "parameters": 50826
+    },
+    "numpy_mlp": {
+      "test_accuracy_mean": 0.9722222222222221,
+      "test_accuracy_std": 0.0043033148291193365,
+      "train_seconds_per_run": 1.2,
+      "parameters": 50826,
+      "mean_best_epoch": 25.8
+    },
+    "numpy_cnn": {
+      "test_accuracy_mean": 0.9772222222222222,
+      "test_accuracy_std": 0.0036851386559504313,
+      "train_seconds_per_run": 6.5,
+      "parameters": 13706,
+      "mean_best_epoch": 38.0
+    },
+    "numpy_cnn + shift augmentation": {
+      "test_accuracy_mean": 0.9805555555555557,
+      "test_accuracy_std": 0.008425417160057293,
+      "train_seconds_per_run": 9.0,
+      "parameters": 13706,
+      "mean_best_epoch": 60.2
+    }
+  },
+  "best_model": "numpy_cnn + shift augmentation",
+  "confusion_matrix": [
+    [
+      36,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      35,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      33,
+      1,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      37,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      34,
+      1,
+      0,
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      1,
+      0,
+      36,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      36,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      35,
+      1,
+      0
+    ],
+    [
+      0,
+      2,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      32,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      36
+    ]
+  ]
+}

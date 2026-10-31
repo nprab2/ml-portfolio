@@ -1,0 +1,42 @@
+{
+  "n_homes": 15000,
+  "median_price": 513000.0,
+  "models": {
+    "ridge_splines": {
+      "rmsle": 0.08723355901591155,
+      "mae_usd": 40172.294353226665,
+      "mape": 0.06976651325774919,
+      "r2": 0.9543110356441584
+    },
+    "random_forest": {
+      "rmsle": 0.11365126999633382,
+      "mae_usd": 51540.21509459728,
+      "mape": 0.08972689921208231,
+      "r2": 0.9228502084697107
+    },
+    "gradient_boosting": {
+      "rmsle": 0.09146755595195727,
+      "mae_usd": 41482.87785195148,
+      "mape": 0.0725560293797562,
+      "r2": 0.9507820133564162
+    },
+    "stacked_ensemble": {
+      "rmsle": 0.08638349887134558,
+      "mae_usd": 39593.451918819126,
+      "mape": 0.06898165911133308,
+      "r2": 0.9559389984032175
+    }
+  },
+  "stack_weights": {
+    "ridge_splines": 0.692,
+    "random_forest": -0.043,
+    "gradient_boosting": 0.351
+  },
+  "conformal_90": {
+    "coverage": 0.9066666666666666,
+    "median_relative_width": 0.30946593234445663,
+    "coverage_large_homes": 0.8421052631578947,
+    "median_relative_width_large_homes": 0.37615074852950414,
+    "median_relative_width_typical_homes": 0.3088216837170106
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "n_customers": 20000,
+  "churn_rate": 0.3497,
+  "models": {
+    "logistic_regression": {
+      "cv_roc_auc_mean": 0.8588499066863733,
+      "cv_roc_auc_std": 0.0049783059802385055,
+      "test_roc_auc": 0.8544124036529636,
+      "test_pr_auc": 0.7680424130076279,
+      "test_brier": 0.1451549794923956
+    },
+    "gradient_boosting": {
+      "cv_roc_auc_mean": 0.8643594906012332,
+      "cv_roc_auc_std": 0.0049275197286886676,
+      "test_roc_auc": 0.8670408835442683,
+      "test_pr_auc": 0.7954345403772475,
+      "test_brier": 0.13778715761482355
+    }
+  },
+  "champion": "gradient_boosting",
+  "business": {
+    "optimal_threshold": 0.26,
+    "test_profit_at_optimal": 152329.99999999997,
+    "test_profit_at_0.5": 126650.0,
+    "test_profit_target_everyone": 93790.0,
+    "test_f1_at_optimal": 0.7038004061502756,
+    "customers_targeted_pct": 0.512
+  },
+  "permutation_importance": {
+    "tenure_months": 0.10486209873092747,
+    "contract": 0.08074059600434098,
+    "support_calls_90d": 0.04468075867889383,
+    "num_products": 0.022951776121736867,
+    "monthly_charges": 0.019301121056700277,
+    "internet_service": 0.006168738641513372,
+    "payment_method": 0.00595204626581467,
+    "total_charges": 0.003846241575860665,
+    "has_partner": 0.0021332862848429056,
+    "is_senior": 0.0011370784701216553,
+    "paperless_billing": 0.0005159669440383929
+  }
+}

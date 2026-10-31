@@ -1,0 +1,6 @@
+segment,name,customers,revenue_share,recency_days,frequency_per_year,avg_order_value,monetary_per_year,discount_share,share_grocery,share_electronics
+0,Champions,614,0.336,6.0,29.837,114.106,3320.959,0.165,0.192,0.246
+1,At-risk / lapsing,1332,0.037,184.5,2.095,63.118,137.027,0.277,0.332,0.091
+2,Deal hunters,1126,0.095,19.5,11.256,43.168,484.314,0.779,0.146,0.095
+3,Big-ticket buyers,684,0.189,63.0,2.409,623.395,1451.807,0.209,0.222,0.374
+4,Loyal everyday shoppers,1244,0.344,4.0,39.095,41.449,1627.249,0.301,0.651,0.055

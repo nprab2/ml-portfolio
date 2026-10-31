@@ -1,0 +1,31 @@
+{
+  "n_transactions": 486485,
+  "fraud_rate": 0.006176963318499029,
+  "test_transactions": 145946,
+  "review_budget": 730,
+  "fraud_dollars_in_test": 125965.21,
+  "models": {
+    "isolation_forest (unsupervised)": {
+      "pr_auc": 0.6384499843066217,
+      "roc_auc": 0.9768545196346522,
+      "recall_at_1pct_fpr": 0.7675736961451247,
+      "precision_at_top_730": 0.663013698630137,
+      "net_dollars_saved": 89734.91
+    },
+    "logistic_regression (balanced)": {
+      "pr_auc": 0.8789098723932086,
+      "roc_auc": 0.9916886242906876,
+      "recall_at_1pct_fpr": 0.9115646258503401,
+      "precision_at_top_730": 0.9205479452054794,
+      "net_dollars_saved": 106071.52
+    },
+    "gradient_boosting": {
+      "pr_auc": 0.8757818988745795,
+      "roc_auc": 0.9903296963742205,
+      "recall_at_1pct_fpr": 0.9070294784580499,
+      "precision_at_top_730": 0.9260273972602739,
+      "net_dollars_saved": 106617.50000000001
+    }
+  },
+  "ablation_no_behavioural_pr_auc": 0.8300628755546119
+}

@@ -1,0 +1,176 @@
+{
+  "n_customers": 5000,
+  "n_transactions": 144346,
+  "chosen_k": 5,
+  "k_selection": [
+    {
+      "k": 2,
+      "inertia": 44795.5544,
+      "silhouette": 0.2606,
+      "davies_bouldin": 1.2316,
+      "gmm_bic": 26557.8861
+    },
+    {
+      "k": 3,
+      "inertia": 34713.936,
+      "silhouette": 0.3079,
+      "davies_bouldin": 1.4306,
+      "gmm_bic": 14052.5196
+    },
+    {
+      "k": 4,
+      "inertia": 28759.3908,
+      "silhouette": 0.3121,
+      "davies_bouldin": 1.3803,
+      "gmm_bic": 4249.1363
+    },
+    {
+      "k": 5,
+      "inertia": 25125.4819,
+      "silhouette": 0.3178,
+      "davies_bouldin": 1.2916,
+      "gmm_bic": -4487.445
+    },
+    {
+      "k": 6,
+      "inertia": 23596.1198,
+      "silhouette": 0.2984,
+      "davies_bouldin": 1.5014,
+      "gmm_bic": -19990.0764
+    },
+    {
+      "k": 7,
+      "inertia": 22342.7033,
+      "silhouette": 0.3027,
+      "davies_bouldin": 1.44,
+      "gmm_bic": -23466.9264
+    },
+    {
+      "k": 8,
+      "inertia": 21275.4073,
+      "silhouette": 0.2749,
+      "davies_bouldin": 1.6069,
+      "gmm_bic": -20595.9686
+    },
+    {
+      "k": 9,
+      "inertia": 20267.7929,
+      "silhouette": 0.2771,
+      "davies_bouldin": 1.5808,
+      "gmm_bic": -33141.0992
+    },
+    {
+      "k": 10,
+      "inertia": 19452.0343,
+      "silhouette": 0.2017,
+      "davies_bouldin": 1.7136,
+      "gmm_bic": -34507.0422
+    }
+  ],
+  "bootstrap_stability_ari": 0.9952483868068975,
+  "ari_vs_hidden_personas": 0.9294589728351932,
+  "segments": [
+    {
+      "segment": 0,
+      "name": "Champions",
+      "customers": 614,
+      "revenue_share": 0.336,
+      "recency_days": 6.0,
+      "frequency_per_year": 29.837,
+      "avg_order_value": 114.106,
+      "monetary_per_year": 3320.959,
+      "discount_share": 0.165,
+      "share_grocery": 0.192,
+      "share_electronics": 0.246
+    },
+    {
+      "segment": 1,
+      "name": "At-risk / lapsing",
+      "customers": 1332,
+      "revenue_share": 0.037,
+      "recency_days": 184.5,
+      "frequency_per_year": 2.095,
+      "avg_order_value": 63.118,
+      "monetary_per_year": 137.027,
+      "discount_share": 0.277,
+      "share_grocery": 0.332,
+      "share_electronics": 0.091
+    },
+    {
+      "segment": 2,
+      "name": "Deal hunters",
+      "customers": 1126,
+      "revenue_share": 0.095,
+      "recency_days": 19.5,
+      "frequency_per_year": 11.256,
+      "avg_order_value": 43.168,
+      "monetary_per_year": 484.314,
+      "discount_share": 0.779,
+      "share_grocery": 0.146,
+      "share_electronics": 0.095
+    },
+    {
+      "segment": 3,
+      "name": "Big-ticket buyers",
+      "customers": 684,
+      "revenue_share": 0.189,
+      "recency_days": 63.0,
+      "frequency_per_year": 2.409,
+      "avg_order_value": 623.395,
+      "monetary_per_year": 1451.807,
+      "discount_share": 0.209,
+      "share_grocery": 0.222,
+      "share_electronics": 0.374
+    },
+    {
+      "segment": 4,
+      "name": "Loyal everyday shoppers",
+      "customers": 1244,
+      "revenue_share": 0.344,
+      "recency_days": 4.0,
+      "frequency_per_year": 39.095,
+      "avg_order_value": 41.449,
+      "monetary_per_year": 1627.249,
+      "discount_share": 0.301,
+      "share_grocery": 0.651,
+      "share_electronics": 0.055
+    }
+  ],
+  "confusion_vs_personas": {
+    "At-risk / lapsing": {
+      "big_ticket": 13,
+      "champions": 0,
+      "deal_hunters": 33,
+      "lapsing": 1286,
+      "loyal_grocery": 0
+    },
+    "Big-ticket buyers": {
+      "big_ticket": 677,
+      "champions": 1,
+      "deal_hunters": 0,
+      "lapsing": 6,
+      "loyal_grocery": 0
+    },
+    "Champions": {
+      "big_ticket": 1,
+      "champions": 579,
+      "deal_hunters": 0,
+      "lapsing": 12,
+      "loyal_grocery": 22
+    },
+    "Deal hunters": {
+      "big_ticket": 0,
+      "champions": 0,
+      "deal_hunters": 1082,
+      "lapsing": 44,
+      "loyal_grocery": 0
+    },
+    "Loyal everyday shoppers": {
+      "big_ticket": 0,
+      "champions": 1,
+      "deal_hunters": 1,
+      "lapsing": 4,
+      "loyal_grocery": 1238
+    }
+  }
+}

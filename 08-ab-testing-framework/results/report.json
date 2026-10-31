@@ -1,0 +1,93 @@
+{
+  "experiment": {
+    "design": {
+      "users_per_arm_needed_for_8pct_mde": 61119
+    },
+    "srm": {
+      "chi2": 0.2738,
+      "p_value": 0.6007940159570007,
+      "srm_detected": false
+    },
+    "n": {
+      "A": 40074,
+      "B": 39926
+    },
+    "conversion": {
+      "A": 0.038578629535359586,
+      "B": 0.04355557781896509,
+      "ztest": {
+        "estimate": 0.004976948283605502,
+        "relative_lift": 0.12900790783777935,
+        "ci_low": 0.002226749179544286,
+        "ci_high": 0.007727147387666718,
+        "p_value": 0.00038966452911135213
+      },
+      "bayesian": {
+        "prob_b_better": 0.999775,
+        "expected_loss_choose_b": 5.6181029839925194e-08,
+        "expected_loss_choose_a": 0.004979039961373428,
+        "lift_credible_interval_95": [
+          0.05590014286127794,
+          0.20735279015955788
+        ]
+      }
+    },
+    "revenue_per_user": {
+      "raw_welch": {
+        "estimate": 0.12268564766663026,
+        "relative_lift": 0.018736292992558884,
+        "ci_low": -0.13571362258037833,
+        "ci_high": 0.38108491791363885,
+        "p_value": 0.35206987475183166
+      },
+      "cuped_welch": {
+        "estimate": 0.2164430786725262,
+        "relative_lift": 0.03329263815696827,
+        "ci_low": -0.007964741777720552,
+        "ci_high": 0.440850899122773,
+        "p_value": 0.058704215223433304
+      },
+      "cuped_theta": 0.19023935953096388,
+      "variance_reduction": 0.24580344617221894,
+      "ci_width_raw": 0.5167985404940172,
+      "ci_width_cuped": 0.44881564090049353,
+      "median_diff_bootstrap": [
+        -0.010000000000000009,
+        -0.06000000000000005,
+        0.030000000000000027
+      ]
+    }
+  },
+  "aa_false_positive_rate": 0.059,
+  "power_study": {
+    "analytic_n_for_80pct_power": 31234,
+    "sizes": [
+      7808,
+      15617,
+      23425,
+      31234,
+      46851,
+      62468
+    ],
+    "empirical_power": [
+      0.298,
+      0.55,
+      0.668,
+      0.79,
+      0.924,
+      0.982
+    ]
+  },
+  "peeking_null": {
+    "fixed_horizon": 0.054,
+    "naive_peeking": 0.3215,
+    "msprt": 0.004,
+    "msprt_median_stop_n": 4300.0
+  },
+  "peeking_10pct_lift": {
+    "fixed_horizon": 0.972,
+    "naive_peeking": 0.99,
+    "msprt": 0.898,
+    "msprt_median_stop_n": 13200.0
+  }
+}
